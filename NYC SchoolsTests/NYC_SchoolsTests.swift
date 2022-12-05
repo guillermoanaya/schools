@@ -8,29 +8,118 @@
 import XCTest
 @testable import NYC_Schools
 
+extension SchoolListEnviroment {
+  static func testWithSuccess() -> SchoolListEnviroment {
+    let schoolModel = SchoolModel(name: "name", dbn: "dbn")
+    let satModel = SATModel(readingScore: "99", writingScore: "99", mathScore: "99")
+    return SchoolListEnviroment { url in
+      Effect<Result<[SchoolModel], Error>> { callback in
+        callback(.success([schoolModel]))
+      }
+    } satModelFetcher: { url in
+      Effect<Result<[SATModel], Error>> { callback in
+        callback(.success([satModel]))
+      }
+    }
+  }
+  
+  static func testWithTripWireErrorLoading() -> SchoolListEnviroment {
+    return SchoolListEnviroment { url in
+      Effect<Result<[SchoolModel], Error>> { callback in
+        callback(.failure(AppErrors.tripwire("Error loading Schools")))
+      }
+    } satModelFetcher: { url in
+      Effect<Result<[SATModel], Error>> { callback in
+        callback(.failure(AppErrors.tripwire("Error loading SAT")))
+      }
+    }
+  }
+  
+  static func testWithErrorToDisplayWhileLoading() -> SchoolListEnviroment {
+    return SchoolListEnviroment { url in
+      Effect<Result<[SchoolModel], Error>> { callback in
+        callback(.failure(AppErrors.toDisplay("Error loading Schools")))
+      }
+    } satModelFetcher: { url in
+      Effect<Result<[SATModel], Error>> { callback in
+        callback(.failure(AppErrors.toDisplay("Error loading SAT")))
+      }
+    }
+  }
+  
+  
+}
+
 class NYC_SchoolsTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+  func testWithSuccess() {
+    
+    // inject testWithSuccess
+    let store = Store(reducer: SchoolListReducer.schoolListReducer, initState: .initial, enviroment: .testWithSuccess())
+    
+    XCTAssert(store.state.schoolList.count == 0)
+    XCTAssertNil(store.state.selectedSat)
+    
+    // fetch schools
+    store.dispatch(.fetchSchools(limit: 1, offset: 0))
+    
+    XCTAssert(store.state.schoolList.count == 1)
+    XCTAssertEqual(store.state.schoolList.first?.dbn, "dbn")
+    
+    // fetch details
+    store.dispatch(.loadSAT(dbn: "dbn"))
+    XCTAssertNotNil(store.state.selectedSat)
+    XCTAssertEqual(store.state.selectedSat?.mathScore, "99")
+    
+    // no error
+    XCTAssertNil(store.state.errorToDisplay)
+  }
+  
+  func testWithTripWireErrorLoading() {
+    
+    // inject testWithTripWireErrorLoading
+    let store = Store(reducer: SchoolListReducer.schoolListReducer, initState: .initial, enviroment: .testWithTripWireErrorLoading())
+    
+    XCTAssert(store.state.schoolList.count == 0)
+    XCTAssertNil(store.state.selectedSat)
+    
+    // fetch schools
+    store.dispatch(.fetchSchools(limit: 1, offset: 0))
+    
+    XCTAssert(store.state.schoolList.count == 0)
+    XCTAssertNil(store.state.selectedSat)
+    
+    XCTAssertEqual(store.state.errorToDisplay, "An error occurred, we are looking at it")
+    
+    // fetch details
+    store.dispatch(.loadSAT(dbn: "dbn"))
+    XCTAssertNil(store.state.selectedSat)
+    XCTAssertNil(store.state.selectedSat?.mathScore)
+    
+    XCTAssertEqual(store.state.errorToDisplay, "An error occurred, we are looking at it")
+  }
+  
+  func testWithErrorToDisplayWhileLoading() {
+    
+    // inject testWithErrorToDisplayWhileLoading
+    let store = Store(reducer: SchoolListReducer.schoolListReducer, initState: .initial, enviroment: .testWithErrorToDisplayWhileLoading())
+    
+    XCTAssert(store.state.schoolList.count == 0)
+    XCTAssertNil(store.state.selectedSat)
+    
+    // fetch schools
+    store.dispatch(.fetchSchools(limit: 1, offset: 0))
+    
+    XCTAssert(store.state.schoolList.count == 0)
+    XCTAssertNil(store.state.selectedSat)
+    
+    XCTAssertEqual(store.state.errorToDisplay, "Error loading Schools")
+    
+    // fetch details
+    store.dispatch(.loadSAT(dbn: "dbn"))
+    XCTAssertNil(store.state.selectedSat)
+    XCTAssertNil(store.state.selectedSat?.mathScore)
+    
+    XCTAssertEqual(store.state.errorToDisplay, "Error loading SAT")
+  }
 }

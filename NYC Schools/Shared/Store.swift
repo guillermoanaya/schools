@@ -33,11 +33,17 @@ final class Store<State, Action, Enviroment> {
     subject.onNext(state)
   }
   
-  func observe<T: Equatable>(_ keyPath: KeyPath<State, T>) -> Observable<T> {
+  func observeDistinctUntilChanged<T: Equatable>(_ keyPath: KeyPath<State, T>) -> Observable<T> {
     return
       subject
       .map { $0[keyPath: keyPath] }
       .distinctUntilChanged()
+  }
+  
+  func observe<T: Equatable>(_ keyPath: KeyPath<State, T>) -> Observable<T> {
+    return
+      subject
+      .map { $0[keyPath: keyPath] }
   }
   
   deinit {

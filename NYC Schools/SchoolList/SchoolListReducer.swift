@@ -69,7 +69,7 @@ enum SchoolListReducer {
       state.selectedSat = model
       if model == nil {
         return [Effect { callback in
-          callback(SchoolListActions.errorLoading(e: AppErrors.toDisplay("school dont have SAT")))
+          callback(SchoolListActions.errorLoading(e: AppErrors.toDisplay("No details to show")))
         }]
       }
     case .errorLoading(let error):

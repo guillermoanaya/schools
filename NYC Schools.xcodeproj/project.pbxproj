@@ -16,6 +16,28 @@
 		06835355293C68CF00C3C23E /* NYC_SchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835354293C68CF00C3C23E /* NYC_SchoolsTests.swift */; };
 		0683535F293C68CF00C3C23E /* NYC_SchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683535E293C68CF00C3C23E /* NYC_SchoolsUITests.swift */; };
 		06835361293C68CF00C3C23E /* NYC_SchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835360293C68CF00C3C23E /* NYC_SchoolsUITestsLaunchTests.swift */; };
+		0683536E293C724200C3C23E /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683536D293C724200C3C23E /* Effect.swift */; };
+		06835371293D0DB700C3C23E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835370293D0DB700C3C23E /* Store.swift */; };
+		06835374293D178200C3C23E /* SchoolListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835373293D178200C3C23E /* SchoolListReducer.swift */; };
+		06835377293D1FBE00C3C23E /* ModelFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835376293D1FBE00C3C23E /* ModelFetcher.swift */; };
+		0683537A293D1FDD00C3C23E /* SchoolListEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835379293D1FDD00C3C23E /* SchoolListEnviroment.swift */; };
+		0683537D293D232100C3C23E /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683537C293D232100C3C23E /* AppErrors.swift */; };
+		06835380293D2DEF00C3C23E /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683537F293D2DEF00C3C23E /* SchoolModel.swift */; };
+		06835383293DCDF200C3C23E /* SchoolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835382293DCDF200C3C23E /* SchoolDetailViewController.swift */; };
+		06835384293DCDF200C3C23E /* SchoolDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835382293DCDF200C3C23E /* SchoolDetailViewController.swift */; };
+		06835386293DD12800C3C23E /* SATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835385293DD12800C3C23E /* SATModel.swift */; };
+		06835387293DD12800C3C23E /* SATModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835385293DD12800C3C23E /* SATModel.swift */; };
+		0683538C293E72CC00C3C23E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683538B293E72CC00C3C23E /* UIViewExtensions.swift */; };
+		0683538D293E72CC00C3C23E /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683538B293E72CC00C3C23E /* UIViewExtensions.swift */; };
+		06835390293E8B8F00C3C23E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835370293D0DB700C3C23E /* Store.swift */; };
+		06835391293E8BA500C3C23E /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683537C293D232100C3C23E /* AppErrors.swift */; };
+		06835392293E8BDB00C3C23E /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683536D293C724200C3C23E /* Effect.swift */; };
+		06835393293E8CA500C3C23E /* SchoolListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835373293D178200C3C23E /* SchoolListReducer.swift */; };
+		06835394293E8CBF00C3C23E /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0683537F293D2DEF00C3C23E /* SchoolModel.swift */; };
+		06835395293E8CC500C3C23E /* SchoolListEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835379293D1FDD00C3C23E /* SchoolListEnviroment.swift */; };
+		06835396293E8CE600C3C23E /* ModelFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06835376293D1FBE00C3C23E /* ModelFetcher.swift */; };
+		D2CE0BF3594DF2167F3F7E02 /* Pods_NYC_SchoolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDB233DAD197D0DCBBF48B4 /* Pods_NYC_SchoolsTests.framework */; };
+		DF59EA5341527214695EA560 /* Pods_NYC_Schools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F63DB33A4AA745766911215 /* Pods_NYC_Schools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +71,22 @@
 		0683535A293C68CF00C3C23E /* NYC SchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NYC SchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0683535E293C68CF00C3C23E /* NYC_SchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_SchoolsUITests.swift; sourceTree = "<group>"; };
 		06835360293C68CF00C3C23E /* NYC_SchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_SchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0683536D293C724200C3C23E /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		06835370293D0DB700C3C23E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		06835373293D178200C3C23E /* SchoolListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListReducer.swift; sourceTree = "<group>"; };
+		06835376293D1FBE00C3C23E /* ModelFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFetcher.swift; sourceTree = "<group>"; };
+		06835379293D1FDD00C3C23E /* SchoolListEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolListEnviroment.swift; sourceTree = "<group>"; };
+		0683537C293D232100C3C23E /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		0683537F293D2DEF00C3C23E /* SchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		06835382293DCDF200C3C23E /* SchoolDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailViewController.swift; sourceTree = "<group>"; };
+		06835385293DD12800C3C23E /* SATModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATModel.swift; sourceTree = "<group>"; };
+		0683538B293E72CC00C3C23E /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		628AD56C05C183889F604F3E /* Pods-NYC Schools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC Schools.release.xcconfig"; path = "Target Support Files/Pods-NYC Schools/Pods-NYC Schools.release.xcconfig"; sourceTree = "<group>"; };
+		6F63DB33A4AA745766911215 /* Pods_NYC_Schools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_Schools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABDB233DAD197D0DCBBF48B4 /* Pods_NYC_SchoolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_SchoolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6E142F5738B7431DEF01AF /* Pods-NYC SchoolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC SchoolsTests.release.xcconfig"; path = "Target Support Files/Pods-NYC SchoolsTests/Pods-NYC SchoolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C975DC3E669FEAD5387980E5 /* Pods-NYC Schools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC Schools.debug.xcconfig"; path = "Target Support Files/Pods-NYC Schools/Pods-NYC Schools.debug.xcconfig"; sourceTree = "<group>"; };
+		F6D8ADFF4142EB54EEF05683 /* Pods-NYC SchoolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC SchoolsTests.debug.xcconfig"; path = "Target Support Files/Pods-NYC SchoolsTests/Pods-NYC SchoolsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF59EA5341527214695EA560 /* Pods_NYC_Schools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CE0BF3594DF2167F3F7E02 /* Pods_NYC_SchoolsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +123,8 @@
 				06835353293C68CF00C3C23E /* NYC SchoolsTests */,
 				0683535D293C68CF00C3C23E /* NYC SchoolsUITests */,
 				0683533B293C68CC00C3C23E /* Products */,
+				A966E78C451A67FDDAAD70A4 /* Pods */,
+				9825FDF319071CC4F96A0B01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +141,16 @@
 		0683533C293C68CC00C3C23E /* NYC Schools */ = {
 			isa = PBXGroup;
 			children = (
+				0683538A293E5C7700C3C23E /* Shared */,
+				06835389293E5C5700C3C23E /* SchoolDetail */,
+				06835388293E5C2200C3C23E /* SchoolList */,
 				0683533D293C68CC00C3C23E /* AppDelegate.swift */,
 				0683533F293C68CC00C3C23E /* SceneDelegate.swift */,
-				06835341293C68CC00C3C23E /* ViewController.swift */,
 				06835343293C68CC00C3C23E /* Main.storyboard */,
 				06835346293C68CF00C3C23E /* Assets.xcassets */,
 				06835348293C68CF00C3C23E /* LaunchScreen.storyboard */,
 				0683534B293C68CF00C3C23E /* Info.plist */,
+				0683538B293E72CC00C3C23E /* UIViewExtensions.swift */,
 			);
 			path = "NYC Schools";
 			sourceTree = "<group>";
@@ -127,6 +172,57 @@
 			path = "NYC SchoolsUITests";
 			sourceTree = "<group>";
 		};
+		06835388293E5C2200C3C23E /* SchoolList */ = {
+			isa = PBXGroup;
+			children = (
+				0683537F293D2DEF00C3C23E /* SchoolModel.swift */,
+				06835373293D178200C3C23E /* SchoolListReducer.swift */,
+				06835379293D1FDD00C3C23E /* SchoolListEnviroment.swift */,
+				06835341293C68CC00C3C23E /* ViewController.swift */,
+			);
+			path = SchoolList;
+			sourceTree = "<group>";
+		};
+		06835389293E5C5700C3C23E /* SchoolDetail */ = {
+			isa = PBXGroup;
+			children = (
+				06835385293DD12800C3C23E /* SATModel.swift */,
+				06835382293DCDF200C3C23E /* SchoolDetailViewController.swift */,
+			);
+			path = SchoolDetail;
+			sourceTree = "<group>";
+		};
+		0683538A293E5C7700C3C23E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0683536D293C724200C3C23E /* Effect.swift */,
+				06835370293D0DB700C3C23E /* Store.swift */,
+				06835376293D1FBE00C3C23E /* ModelFetcher.swift */,
+				0683537C293D232100C3C23E /* AppErrors.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9825FDF319071CC4F96A0B01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F63DB33A4AA745766911215 /* Pods_NYC_Schools.framework */,
+				ABDB233DAD197D0DCBBF48B4 /* Pods_NYC_SchoolsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A966E78C451A67FDDAAD70A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C975DC3E669FEAD5387980E5 /* Pods-NYC Schools.debug.xcconfig */,
+				628AD56C05C183889F604F3E /* Pods-NYC Schools.release.xcconfig */,
+				F6D8ADFF4142EB54EEF05683 /* Pods-NYC SchoolsTests.debug.xcconfig */,
+				AF6E142F5738B7431DEF01AF /* Pods-NYC SchoolsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06835364293C68CF00C3C23E /* Build configuration list for PBXNativeTarget "NYC Schools" */;
 			buildPhases = (
+				9B2DD6DA68EE3C7151A575A5 /* [CP] Check Pods Manifest.lock */,
 				06835336293C68CC00C3C23E /* Sources */,
 				06835337293C68CC00C3C23E /* Frameworks */,
 				06835338293C68CC00C3C23E /* Resources */,
+				26C452623D8C49D29C04936A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06835367293C68CF00C3C23E /* Build configuration list for PBXNativeTarget "NYC SchoolsTests" */;
 			buildPhases = (
+				901E9417B51E1A23E768F596 /* [CP] Check Pods Manifest.lock */,
 				0683534C293C68CF00C3C23E /* Sources */,
 				0683534D293C68CF00C3C23E /* Frameworks */,
 				0683534E293C68CF00C3C23E /* Resources */,
+				F4FF0C80C24FDF31A4E41229 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,7 +298,6 @@
 					};
 					0683534F293C68CF00C3C23E = {
 						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 06835339293C68CC00C3C23E;
 					};
 					06835359293C68CF00C3C23E = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -253,11 +352,102 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26C452623D8C49D29C04936A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYC Schools/Pods-NYC Schools-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYC Schools/Pods-NYC Schools-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYC Schools/Pods-NYC Schools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		901E9417B51E1A23E768F596 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC SchoolsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2DD6DA68EE3C7151A575A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC Schools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4FF0C80C24FDF31A4E41229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYC SchoolsTests/Pods-NYC SchoolsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NYC SchoolsTests/Pods-NYC SchoolsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NYC SchoolsTests/Pods-NYC SchoolsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		06835336293C68CC00C3C23E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0683537A293D1FDD00C3C23E /* SchoolListEnviroment.swift in Sources */,
+				06835374293D178200C3C23E /* SchoolListReducer.swift in Sources */,
+				06835386293DD12800C3C23E /* SATModel.swift in Sources */,
+				0683538C293E72CC00C3C23E /* UIViewExtensions.swift in Sources */,
+				06835383293DCDF200C3C23E /* SchoolDetailViewController.swift in Sources */,
+				06835371293D0DB700C3C23E /* Store.swift in Sources */,
+				06835380293D2DEF00C3C23E /* SchoolModel.swift in Sources */,
+				0683537D293D232100C3C23E /* AppErrors.swift in Sources */,
+				0683536E293C724200C3C23E /* Effect.swift in Sources */,
+				06835377293D1FBE00C3C23E /* ModelFetcher.swift in Sources */,
 				06835342293C68CC00C3C23E /* ViewController.swift in Sources */,
 				0683533E293C68CC00C3C23E /* AppDelegate.swift in Sources */,
 				06835340293C68CC00C3C23E /* SceneDelegate.swift in Sources */,
@@ -268,6 +458,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06835393293E8CA500C3C23E /* SchoolListReducer.swift in Sources */,
+				06835394293E8CBF00C3C23E /* SchoolModel.swift in Sources */,
+				06835396293E8CE600C3C23E /* ModelFetcher.swift in Sources */,
+				0683538D293E72CC00C3C23E /* UIViewExtensions.swift in Sources */,
+				06835392293E8BDB00C3C23E /* Effect.swift in Sources */,
+				06835384293DCDF200C3C23E /* SchoolDetailViewController.swift in Sources */,
+				06835390293E8B8F00C3C23E /* Store.swift in Sources */,
+				06835387293DD12800C3C23E /* SATModel.swift in Sources */,
+				06835391293E8BA500C3C23E /* AppErrors.swift in Sources */,
+				06835395293E8CC500C3C23E /* SchoolListEnviroment.swift in Sources */,
 				06835355293C68CF00C3C23E /* NYC_SchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +632,7 @@
 		};
 		06835365293C68CF00C3C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C975DC3E669FEAD5387980E5 /* Pods-NYC Schools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +660,7 @@
 		};
 		06835366293C68CF00C3C23E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 628AD56C05C183889F604F3E /* Pods-NYC Schools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,9 +688,9 @@
 		};
 		06835368293C68CF00C3C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6D8ADFF4142EB54EEF05683 /* Pods-NYC SchoolsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -499,15 +701,14 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYC Schools.app/NYC Schools";
 			};
 			name = Debug;
 		};
 		06835369293C68CF00C3C23E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6E142F5738B7431DEF01AF /* Pods-NYC SchoolsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -518,7 +719,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NYC Schools.app/NYC Schools";
 			};
 			name = Release;
 		};

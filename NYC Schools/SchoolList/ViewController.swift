@@ -17,6 +17,7 @@ class ViewController: UITableViewController {
   
   private var schoolListSubscription: Disposable?
   private var satSubscription: Disposable?
+  private var errorSubscription: Disposable?
   
   // this vewcontroller need a store to be injected from outside to be testable
   // I usually preffer dependency inhection from the init, but since Im using storyboard to speedup work
@@ -30,13 +31,18 @@ class ViewController: UITableViewController {
     
     store = Store(reducer: SchoolListReducer.schoolListReducer, initState: .initial, enviroment: .prod())
     
-    schoolListSubscription = store?.observe(\.schoolList).subscribe(onNext: { [weak self] schools in
+    schoolListSubscription = store.observeDistinctUntilChanged(\.schoolList).subscribe(onNext: { [weak self] schools in
       self?.tableView.reloadData()
     })
     
-    satSubscription = store?.observe(\.selectedSat).subscribe(onNext: { [weak self] satModel in
+    satSubscription = store.observe(\.selectedSat).subscribe(onNext: { [weak self] satModel in
       guard let model = satModel else { return }
       self?.performSegue(withIdentifier: "toDetail", sender: model)
+    })
+    
+    errorSubscription = store.observe(\.errorToDisplay).subscribe(onNext: { errorMessage in
+      guard let message = errorMessage else { return }
+      self.tableView.displayMessage(message)
     })
     
     store.dispatch(.fetchSchools(limit: pageLimit, offset: store.state.schoolList.count))
@@ -52,6 +58,7 @@ class ViewController: UITableViewController {
   deinit {
     schoolListSubscription?.dispose()
     satSubscription?.dispose()
+    errorSubscription?.dispose()
   }
   
 }
